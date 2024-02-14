@@ -1,0 +1,14 @@
+/* Dots indicate classes, and hashtags indicate IDs.*/
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    }
+
+header, footer {
+    background-color: #eee;
+    }
+
+.site-title {
+    color: gray
+}
