@@ -19,4 +19,16 @@ header, footer {
 
 a {
     text-decoration: none;
+    background-color: blue;
+    color: white;
+    border: 2px dotted;
+
+}
+
+a:hover {
+    background-color: cyan
+}
+
+a:focus {
+    background-color: magenta
 }
