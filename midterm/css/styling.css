@@ -10,8 +10,8 @@ header {
 html {
   font-family: Arial, sans-serif;
   background-color: #aad4cf;
-  margin-right: 208px;
-  margin-left: 208px;
+  width: 1030px;
+  height: auto;
 }
 
 main  {
