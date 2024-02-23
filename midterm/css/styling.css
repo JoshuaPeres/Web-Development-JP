@@ -1,7 +1,5 @@
 /* Dots indicate classes, and hashtags indicate IDs.*/
 header {
-  margin-right: 208px;
-  margin-left: 208px;
   text-align: center;
   background-image: url('../midterm-assets/lone-starfish-wide.jpg');
   background-repeat: no-repeat;
@@ -9,15 +7,51 @@ header {
   background-size: cover;
 }
 
-body {
+html {
   font-family: Arial, sans-serif;
   background-color: #aad4cf;
+  margin-right: 208px;
+  margin-left: 208px;
+}
+
+main  {
+  font-family: Arial, sans-serif;
+  background-color: #d4e9e7;
+  padding: 15px;
+}
+
+main h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+main p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.inset {
+  float: left;
+  margin-right: 20px;
+  width: auto;
+  height: 300px;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h1 {
 font-weight: normal;
 font-size: 60px;
 color: white
+}
+
+#header-navigation {
+  background-color: #d4e9e7;
 }
 
 #header-navigation ul {
