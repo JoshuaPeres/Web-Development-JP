@@ -96,6 +96,7 @@ color: #555;
 display: none;
 }
 
-.header-option:not(:last-child) /* Only activates if the option is not the last child. */ {
+.header-option:not(:last-child) /* Only activates if the option is not the last child. */
+  {
 border-right: 1px solid black;
 }
