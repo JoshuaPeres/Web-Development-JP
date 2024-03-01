@@ -12,7 +12,10 @@ html {
   background-color: #aad4cf;
   width: 1030px;
   height: auto;
-  float: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 main  {
