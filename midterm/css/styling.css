@@ -10,8 +10,6 @@ header {
 html {
   font-family: Arial, sans-serif;
   background-color: #aad4cf;
-  width: 1030px;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
