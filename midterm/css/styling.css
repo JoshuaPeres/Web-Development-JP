@@ -11,6 +11,7 @@ html {
   font-family: Arial, sans-serif;
   background-color: #aad4cf;
   display: flex;
+  /* Force all to center */
   justify-content: center;
   align-items: center;
   margin-left: 12.5%;
@@ -35,6 +36,7 @@ main p {
 }
 
 .inset {
+  /* The inset is for the square image. */
   float: left;
   margin-right: 20px;
   width: auto;
@@ -58,6 +60,7 @@ h1 {
 }
 
 #header-navigation ul {
+  /* For the 3 header options */
   list-style-type: none;
   margin: 7px 5px;
   padding: 10px;
@@ -88,10 +91,12 @@ h1 {
 }
 
 .header-option:hover {
+  /* Headers when hovered over */
   color: #777;
 }
 
 .header-option:active {
+  /* Headers when clicking */
   color: #555;
 }
 
@@ -100,5 +105,25 @@ h1 {
 }
 
 .header-option:not(:last-child) {
+  /* Place borders after every child that isn't the last. */
   border-right: 1px solid black;
+}
+
+form {
+  /* Targets entire form and wraps it in a border. */
+  border: 2px solid black;
+  padding: 20px 10px;
+}
+
+button[type="submit"] {
+  /* For the submission button. */
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+  color: white;
 }
