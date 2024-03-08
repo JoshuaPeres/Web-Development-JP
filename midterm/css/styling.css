@@ -131,3 +131,9 @@ button[type="submit"]:hover {
 .question {
   font-size: 25px;
 }
+
+input[type="text"], input[type="email"], textarea {
+ /* Ensures width extends for the entire box. */
+  width: 100%;
+  box-sizing: border-box;
+}
