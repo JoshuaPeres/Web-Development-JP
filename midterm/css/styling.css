@@ -13,8 +13,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
 }
 
 main  {
@@ -80,7 +80,7 @@ padding: 10px;
 display: inline-block;
 color: black;
 text-decoration: none;
-padding: 10px 200px;
+width: 33%;
 font-size: 20px;
 cursor: pointer;
 transition: color 0.3s ease;
