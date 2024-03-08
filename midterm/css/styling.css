@@ -1,4 +1,4 @@
-/* Dots indicate classes, and hashtags indicate IDs.*/
+/* Dots indicate classes, and hashtags indicate IDs. */
 header {
   text-align: center;
   background-image: url('../midterm-assets/lone-starfish-wide.jpg');
@@ -13,11 +13,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 17.5%;
-  margin-right: 17.5%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
 
-main  {
+main {
   font-family: Arial, sans-serif;
   background-color: #d4e9e7;
   padding: 15px;
@@ -48,9 +48,9 @@ main::after {
 }
 
 h1 {
-font-weight: normal;
-font-size: 60px;
-color: white
+  font-weight: normal;
+  font-size: 60px;
+  color: white
 }
 
 #header-navigation {
@@ -58,47 +58,47 @@ color: white
 }
 
 #header-navigation ul {
-list-style-type: none;
-margin: 7px 5px;
-padding: 10px;
-width: 960px;
-float:center;
-text-align: center;
+  list-style-type: none;
+  margin: 7px 5px;
+  padding: 10px;
+  width: 960px;
+  float: center;
+  text-align: center;
 }
+
 #header-navigation ul li {
-display: inline;
-padding: 10px 8px;
+  display: inline;
+  padding: 10px 8px;
 }
 
 .header-navigation {
-text-align: center;
-background-color: #d4e9e7;
-padding: 10px;
+  text-align: center;
+  background-color: #d4e9e7;
+  padding: 10px;
 }
 
 .header-option {
-display: inline-block;
-color: black;
-text-decoration: none;
-width: 33%;
-font-size: 20px;
-cursor: pointer;
-transition: color 0.3s ease;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  width: 33%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .header-option:hover {
-color: #777;
+  color: #777;
 }
 
 .header-option:active {
-color: #555;
+  color: #555;
 }
 
 .header-divider {
-display: none;
+  display: none;
 }
 
-.header-option:not(:last-child) /* Only activates if the option is not the last child. */
-  {
-border-right: 1px solid black;
+.header-option:not(:last-child) {
+  border-right: 1px solid black;
 }
