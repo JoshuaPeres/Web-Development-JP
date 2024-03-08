@@ -13,9 +13,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1750px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 main  {
