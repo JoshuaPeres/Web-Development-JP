@@ -127,3 +127,7 @@ button[type="submit"]:hover {
   background-color: black;
   color: white;
 }
+
+.question {
+  font-size: 25px;
+}
