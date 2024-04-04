@@ -251,3 +251,36 @@ h1 {
     color: #000;
     margin-bottom: 20px;
 }
+
+/* Section 7 styles */
+.section7 {
+    background-color: #fff; /* White background */
+    padding: 0 calc(1/12 * 100%) 10px; /* Margins on both sides and 10px padding at the bottom */
+}
+
+.content7 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+    border: 1px solid #000; /* 1px solid black borders for cells */
+    padding: 10px;
+}
+
+th {
+    background-color: #ffe6ac; /* Background color for top row cells */
+}
+
+tr:nth-child(2n) td {
+    background-color: transparent; /* Transparent background for even rows */
+}
