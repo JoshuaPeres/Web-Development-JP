@@ -252,6 +252,41 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Section 6 styles */
+.section6 {
+    margin: 0 calc(1/12 * 100%);
+    padding: 0 calc(1/12 * 100%) 10px; /* Add 10px padding at the bottom */
+    max-width: 1200px; /* Same max-width as Section 7 */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.section6 h2 {
+    font-size: 300%;
+}
+
+.section6 .flex-container {
+    display: flex;
+    gap: 2.5%;
+}
+
+.section6 .flex-item {
+    flex: 1;
+}
+
+.section6 h3 {
+    font-size: 200%;
+}
+
+.message-form .form-group:nth-child(3) input {
+    width: 75%;
+}
+
+.message-form .form-group input,
+.message-form .form-group textarea {
+    width: 90%;
+    box-sizing: border-box;
+}
+
 /* Section 7 styles */
 .section7 {
     background-color: #fff; /* White background */
