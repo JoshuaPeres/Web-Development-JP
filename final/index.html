@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desktop Header</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <title>Three Star Media (3SM)</title>
     <link rel="stylesheet" href="css/styling.css">
 </head>
 <body>
     <header class="desktop-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo" style="width: 75%;">
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html" class="menu-item">Home</a></li>
-                <li><a href="about-us.html" class="menu-item">About Us</a></li>
-                <li><a href="services.html" class="menu-item">Services</a></li>
-                <li><a href="team.html" class="menu-item">Team</a></li>
-                <li><a href="contact.html" class="menu-item">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search" class="search-input">
-            <button type="submit" class="search-button"><img src="images/mag.png" alt="Search" style="height: 50%;"></button>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="box"><a href="/index.html" class="active">Home</a></li>
+                    <li class="box"><a href="/about-us.html">About Us</a></li>
+                    <li class="box"><a href="/services.html">Services</a></li>
+                    <li class="box"><a href="/team.html">Team</a></li>
+                    <li class="box"><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button"><img src="images/mag.png" alt="Search"></button>
+            </div>
         </div>
     </header>
+    
+    <footer class="desktop-footer">
+    <div class="footer-content">
+        <p class="copyright">&copy; Copyright Three Star Media, 2020</p>
+        <p class="image-source">All images are taken from <a href="https://unsplash.com/" class="link-underline">Unsplash</a>.</p>
+    </div>
+</footer>
 </body>
 </html>

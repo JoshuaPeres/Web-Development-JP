@@ -11,38 +11,73 @@ body {
 /* Header styles */
 .desktop-header {
     background-color: #222222;
+    padding: 10px 0;
+}
+
+/* Header container styles */
+.header-container {
     display: flex;
+    justify-content: space-between; /* Distribute items evenly */
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header horizontally */
+    padding: 0 calc(1/12 * 100%);
 }
 
 /* Logo styles */
+.logo {
+    flex: 0 1 calc(1/12 * 100%);
+}
+
 .logo img {
-    width: 75%;
+    max-width: 100%;
 }
 
 /* Menu styles */
+.menu {
+    flex: 5; /* Take remaining space */
+    display: flex;
+    justify-content: center; /* Center menu items */
+}
+
 .menu ul {
     list-style-type: none;
     display: flex;
-    align-items: center;
 }
 
-.menu-item {
+.box {
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.box a {
     color: #c78b07;
     text-decoration: none;
     padding: 10px;
-    transition: font-weight 0.3s ease; /* Added transition */
+    transition: font-weight 0.3s ease;
 }
 
-.menu-item:hover {
+.box:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Active menu item styles based on child number */
+.menu ul li:nth-child(1) a.active,
+.menu ul li:nth-child(2) a.active,
+.menu ul li:nth-child(3) a.active,
+.menu ul li:nth-child(4) a.active,
+.menu ul li:nth-child(5) a.active {
     font-weight: bold;
+    color: #222;
+    background-color: #c78b07;
 }
 
 /* Search bar styles */
 .search-bar {
+    flex: 0 1 calc(1/12 * 100%); /* 1/12 width */
     display: flex;
+    justify-content: flex-end; /* Align search bar to the right */
     align-items: center;
 }
 
@@ -58,4 +93,29 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+/* Footer styles */
+.desktop-footer {
+    background-color: #222222;
+    color: #c78b07;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 0.75em; /* 0.75x size of menu text */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 calc(1/12 * 100%);
+}
+
+.link-underline {
+    color: #c78b07;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.link-underline:hover {
+    color: #fff;
 }
