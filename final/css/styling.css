@@ -1,8 +1,5 @@
-
 /* Import Open Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
 
 /* Body styles */
 body {
@@ -20,27 +17,27 @@ body {
 /* Header container styles */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Distribute items evenly */
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Maximum width of the header */
-    margin: 0 auto; /* Center the header horizontally */
-    padding: 0 calc(1/12 * 100%); /* Gap of 1/12 on both sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 calc(1/12 * 100%);
 }
 
 /* Logo styles */
 .logo {
-    flex: 0 1 calc(1/12 * 100%); /* 1/12 width */
+    flex: 0 1 calc(1/12 * 100%);
 }
 
 .logo img {
-    max-width: 100%; /* Ensure logo fits within container */
+    max-width: 100%;
 }
 
 /* Menu styles */
 .menu {
-    flex: 5; /* Take remaining space */
+    flex: 5;
     display: flex;
-    justify-content: center; /* Center menu items */
+    justify-content: center;
 }
 
 .menu ul {
@@ -51,7 +48,7 @@ body {
 .box {
     padding: 0 10px;
     background-color: transparent;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
 }
 
 .box a {
@@ -62,10 +59,9 @@ body {
 }
 
 .box:not(:last-child) {
-  margin-right: 40px; /* Adjust as needed */
+  margin-right: 40px;
 }
 
-/* Active menu item styles based on child number */
 .menu ul li:nth-child(1) a.active,
 .menu ul li:nth-child(2) a.active,
 .menu ul li:nth-child(3) a.active,
@@ -73,14 +69,14 @@ body {
 .menu ul li:nth-child(5) a.active {
     font-weight: bold;
     color: #222;
-    background-color: #c78b07; /* Box background color */
+    background-color: #c78b07;
 }
 
 /* Search bar styles */
 .search-bar {
-    flex: 0 1 calc(1/12 * 100%); /* 1/12 width */
+    flex: 0 1 calc(1/12 * 100%);
     display: flex;
-    justify-content: flex-end; /* Align search bar to the right */
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -97,6 +93,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 
 /* Section 1 styles */
 .section1 {
@@ -166,7 +163,7 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    display: inline-flex; /* Align items horizontally */
+    display: flex; /* Align items horizontally */
     align-items: center; /* Center items vertically */
 }
 
@@ -245,16 +242,37 @@ h1 {
     text-align: left; /* Center align the heading */
 }
 
-.section3 .section3-content {
-    display: flex;
-    flex-wrap: wrap; /* Allow boxes to wrap if space is limited */
-    gap: 20px; /* Add some space between panel boxes */
+.section3-content {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Prevent items from wrapping */
+    gap: 20px; /* Add gap between panel boxes */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
 }
 
 .panel-box {
     width: calc(50% - 10px); /* Each panel box takes half the width with a gap of 20px between them */
     overflow: hidden;
     background-color: #ffe6ac; /* Background color for bottom box */
+}
+
+.section3-content .panel-box:nth-child(n+3) {
+    width: calc(31% - 10px); /* Each panel box takes 33.33% of the width with a gap of 10px between them */
+    margin-right: 20px; /* Add the gap of 20px between panel boxes */
+}
+
+.section3-content .panel-box:nth-child(3) {
+    margin-right: auto; /* Push panel box 3 to the left */
+    margin-left: 0; /* Reset left margin */
+}
+
+.section3-content .panel-box:nth-child(4) {
+    margin-right: auto; /* Push panel box 4 to the center */
+    margin-left: auto; /* Push panel box 4 to the center */
+}
+
+.section3-content .panel-box:nth-child(5) {
+    margin-left: auto; /* Push panel box 5 to the right */
+    margin-right: 0; /* Reset right margin */
 }
 
 .panel-box img {
@@ -278,15 +296,17 @@ h1 {
     margin-bottom: 20px; /* Add space below lorem ipsum text */
 }
 
-.custom-button {
+.section3 .custom-button {
     background-color: #222;
     color: #fff;
-    padding: 10px;
+    padding: 15px 10px; /* 15px top and bottom, 10px left and right */
     border: none;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block; /* Display as inline-block */
-    width: auto; /* Set width to auto */
+    display: flex; /* Display as flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 95%; /* Set width to 95% */
 }
 
 .custom-button::after {
