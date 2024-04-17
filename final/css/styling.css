@@ -1,5 +1,8 @@
+
 /* Import Open Sans font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 
 /* Body styles */
 body {
@@ -99,7 +102,10 @@ body {
 .section1 {
     position: relative;
     overflow: hidden;
-    width: 100%; /* Full width */
+    margin: 0 calc(1/12 * 100%);
+    padding: 0 calc(1/12 * 100%) 10px; /* Add 10px padding at the bottom */
+
+    margin: 0 auto; /* Center horizontally */
     margin: 0 auto; /* Center section horizontally */
     height: calc(75vw / 3); /* Center 75% of the viewport width */
     background-image: url('images/main-banner.jpg');
@@ -116,8 +122,7 @@ body {
     border-radius: 5px;
     text-align: left; /* Align content to the left */
     color: #fff;
-    width: 80%; /* 80% of the size of the section */
-    max-width: calc(100% - 2 * calc(1/12 * 100%)); /* Limit width based on margins */
+    width: 100%; /* 80% of the size of the section */
     margin: 0 auto; /* Center horizontally */
     height: 75%; /* 75% of the section 1 height */
     max-height: 75%; /* Maximum height of 75% of the section 1 height */
@@ -138,6 +143,7 @@ body {
 .content {
     position: relative;
     z-index: 1;
+    max-width: 1200px;
     margin: 0 calc(1/12 * 100%); /* Gap of 1/12 on both sides */
 }
 
@@ -195,7 +201,6 @@ h1 {
     position: relative;
     z-index: 1;
     max-width: 1200px;
-    padding: 0 calc(1/12 * 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,6 +232,72 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Section 3 styles */
+.section3 {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px; /* Same max-width as Section 7 */
+    padding: 0 calc(1/12 * 100%) 10px; /* Add 10px padding at the bottom */
+}
+
+.section3 .heading {
+    font-size: 300%; /* Same font size as Section 6's H2 */
+    margin: 20px 0; /* Same margins as before */
+    text-align: left; /* Center align the heading */
+}
+
+.section3 .section3-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap if space is limited */
+    gap: 20px; /* Add some space between panel boxes */
+}
+
+.panel-box {
+    width: calc(50% - 10px); /* Each panel box takes half the width with a gap of 20px between them */
+    overflow: hidden;
+    background-color: #ffe6ac; /* Background color for bottom box */
+}
+
+.panel-box img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove default inline-block spacing */
+}
+
+.panel-box-content {
+    padding: 20px;
+}
+
+.panel-box-content h3 {
+    font-size: 200%;
+    font-weight: bold; /* Make subheaders bold */
+    color: black; /* Black text color */
+    margin-bottom: 10px; /* Add some space below the subheader */
+}
+
+.panel-box-content p {
+    margin-bottom: 20px; /* Add space below lorem ipsum text */
+}
+
+.custom-button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Display as inline-block */
+    width: auto; /* Set width to auto */
+}
+
+.custom-button::after {
+    content: ' ▶'; /* Arrow right character */
+    margin-left: 5px; /* Add space between text and arrow */
+}
+
+.custom-button:hover {
+    background-color: #444; /* Darken button color on hover */
+}
+
 /* Section 4 styles */
 .section4 {
     position: relative;
@@ -246,9 +317,11 @@ h1 {
 
 .section4-content {
     margin: 0 calc(7/48 * 100%); /* Add back margins for content */
+    max-width: 1200px; /* Same max-width as Section 7 */
     padding: 20px; /* Add padding as needed */
     text-align: left; /* Left-align text */
 }
+
 
 .section4 h3 {
     font-size: 200%;
@@ -265,7 +338,6 @@ h1 {
     color: #c78b07; /* Button text color */
     padding: 15px 30px;
     border: 1px solid #c78b07; /* Border color */
-    border-radius: 5px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -291,10 +363,10 @@ h1 {
     flex-wrap: wrap; /* Allow flex items to wrap */
 }
 
-.team-heading {
+.section3 .heading, .section5 .heading {
     font-size: 300%; /* Same font size as Section 6's H2 */
     margin-top: 20px 0; /* Add margin for spacing */
-    text-align: center; /* Center align the heading */
+    text-align: left; /* Center align the heading */
 }
 
 .section5 .content5 {
