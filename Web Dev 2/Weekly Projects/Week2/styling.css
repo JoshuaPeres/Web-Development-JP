@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.siteheader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.emojis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure there's space between items */
+    gap: 1rem; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 calc(50% - 1rem); /* 50% width minus the gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: calc(50% - 1rem); /* Ensure max-width doesn't exceed 50% minus the gap */
+}
+
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.emoji a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
