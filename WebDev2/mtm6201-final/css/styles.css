@@ -1,19 +1,49 @@
-:root {
-    --primary-color: #3498db; /* Example color */
-    --secondary-color: #2ecc71; /* Example color */
-    --bg-color: #f5f5f5; /* Example color */
-    --text-color: #333; /* Example color */
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-.navbar-dark .navbar-nav .nav-link.active {
-    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
-    color: var(--secondary-color);
+    color: #fff;
+}
+
+.hero-section {
+    background-color: #2ecc71; /* Example background color */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    color: #fff; /* Text color for h1 */
+}
+
+.hero-section p {
+    color: #fff; /* Text color for paragraph */
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.works-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.works-section img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
 }
