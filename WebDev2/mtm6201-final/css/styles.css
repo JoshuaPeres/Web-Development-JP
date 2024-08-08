@@ -1,11 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #013220; /* Blackish-green background color */
+    color: #fff; /* Default text color */
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
     color: #fff;
+}
+
+.main-container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #013220; /* Match the body background color */
 }
 
 .hero-section {
@@ -23,12 +29,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #ffffff;
+    background-color: #3498db;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #29b954;
+    background-color: #2980b9;
 }
 
 .works-section {
