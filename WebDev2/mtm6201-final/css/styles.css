@@ -23,12 +23,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #3498db;
+    background-color: #ffffff;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #2980b9;
+    background-color: #29b954;
 }
 
 .works-section {
