@@ -33,13 +33,22 @@ body {
     color: #fff; /* Text color for paragraph */
 }
 
-.btn-primary {
-    background-color: #3498db;
+/* Button styles */
+.btn-reach-out {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+    font-weight: bold; /* Bold text */
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.btn-primary:hover {
-    background-color: #2980b9;
+.btn-reach-out:hover,
+.btn-reach-out:active {
+    background-color: #00690b; /* Green background on hover/click */
+    color: #fff; /* White text color on hover/click */
 }
 
 .works-section {
