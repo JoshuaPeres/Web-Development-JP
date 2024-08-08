@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', Arial, sans-serif;
     background-color: #013220; /* Blackish-green background color */
     color: #fff; /* Default text color */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
@@ -12,6 +16,7 @@ body {
     width: 95%;
     margin: 0 auto;
     background-color: #013220; /* Match the body background color */
+    flex: 1; /* This makes the main content grow and push the footer to the bottom */
 }
 
 .hero-section {
@@ -49,7 +54,17 @@ body {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #07b618; /* Green background color */
+    color: #000; /* Black text color */
     padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-style: italic; /* Italic text */
+    margin: 0; /* Remove default margin */
 }
