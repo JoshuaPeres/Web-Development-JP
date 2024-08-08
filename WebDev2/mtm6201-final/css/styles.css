@@ -77,3 +77,14 @@ footer p {
     font-style: italic; /* Italic text */
     margin: 0; /* Remove default margin */
 }
+
+/* Centering and aligning works title and button */
+.row.mt-5 .col-12.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+}
