@@ -15,10 +15,29 @@ body {
 }
 
 .about-section {
-    background-color: #2ecc71; /* Example background color */
+    background-color: #07b618; /* Green background color */
     padding: 50px;
     border-radius: 10px;
     color: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+
+.selfie-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 150px; /* Adjust size as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    background-color: #013220; /* Darker green section background */
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
 }
 
 footer {
