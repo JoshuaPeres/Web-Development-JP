@@ -1,0 +1,37 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #013220; /* Blackish-green background color */
+    color: #fff; /* Default text color */
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.main-container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #013220; /* Match the body background color */
+}
+
+.about-section {
+    background-color: #2ecc71; /* Example background color */
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #07b618;
+    color: #000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold;
+}
